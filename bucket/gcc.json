@@ -1,0 +1,29 @@
+{
+    "version": "13.2.0-rt_v11-rev0",
+    "description": "mingw builds binaries",
+    "homepage": "https://github.com/niXman/mingw-builds-binaries",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/niXman/mingw-builds-binaries/releases/download/13.2.0-rt_v11-rev0/x86_64-13.2.0-release-posix-seh-msvcrt-rt_v11-rev0.7z",
+            "hash": "a870fc5fecf61ea3d0097b95020447641312f72817ce9039bc53b8db5452e490",
+            "extract_dir": "mingw64"
+        }
+    },
+    "env_add_path": "bin",
+    "env_set": {
+        "C_INCLUDE_PATH": "$dir\\include",
+        "CPLUS_INCLUDE_PATH": "$dir\\include"
+    },
+    "checkver": {
+        "github": "https://github.com/niXman/mingw-builds-binaries",
+        "regex": "tag/([\\w.-]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/niXman/mingw-builds-binaries/releases/download/$version/x86_64-$matchHead-release-posix-seh-msvcrt$matchTail.7z"
+            }
+        }
+    }
+}
