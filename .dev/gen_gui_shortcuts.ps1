@@ -9,7 +9,7 @@ function IfGui {
         $path
     )
 
-    pebox if-gui $path | Out-Null
+    pebox if-windows-gui $path | Out-Null
     return $LASTEXITCODE -eq 0
 }
 
