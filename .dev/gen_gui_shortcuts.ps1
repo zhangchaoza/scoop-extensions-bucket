@@ -9,7 +9,7 @@ function IfGui {
         $path
     )
 
-    pebox if-windows-gui $path | Out-Null
+    & "$PSScriptRoot\pebox.exe" if-windows-gui $path | Out-Null
     return $LASTEXITCODE -eq 0
 }
 
