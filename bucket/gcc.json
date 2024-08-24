@@ -1,12 +1,12 @@
 {
-    "version": "13.2.0-rt_v11-rev0",
+    "version": "14.1.0-rt_v12-rev0",
     "description": "mingw builds binaries",
     "homepage": "https://github.com/niXman/mingw-builds-binaries",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/niXman/mingw-builds-binaries/releases/download/13.2.0-rt_v11-rev0/x86_64-13.2.0-release-posix-seh-msvcrt-rt_v11-rev0.7z",
-            "hash": "a870fc5fecf61ea3d0097b95020447641312f72817ce9039bc53b8db5452e490",
+            "url": "https://github.com/niXman/mingw-builds-binaries/releases/download/14.1.0-rt_v12-rev0/x86_64-14.1.0-release-posix-seh-msvcrt-rt_v12-rev0.7z",
+            "hash": "bc0de4321141730e83fd2457b1f7639946cc66787bf98ba9b03770d06d414df1",
             "extract_dir": "mingw64"
         }
     },
